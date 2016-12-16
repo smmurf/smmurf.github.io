@@ -1,4 +1,4 @@
 [submodule "epam_mp_methodologies"]
 	path = epam_mp_methodologies
-	url = git@github.com:smmurf/epam_mp_methodologies.git
+	url = https://github.com/smmurf/epam_mp_methodologies.git
 	branch = gh-pages
