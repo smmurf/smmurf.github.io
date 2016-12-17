@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CSS Methodologies &amp; Frameworks</title>
+
+		<meta name="description" content="CSS Methodologies & Frameworks - EPAM Mentoring Program 2016" />
+		<meta name="author" content="Yevhen Isakov" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<link rel="stylesheet" href="css/theme/epam.css" id="theme">
+
+        <link rel="stylesheet" href="css/my.css" />
+
+        <!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/user.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section id="mainpage" data-state="mainpage method-bg" data-background="url(assets/i/lake_view.jpg)">
+                    <h1>Methodologies &amp; Frameworks</h1>
+                    <h3>Anton Vernihor</h3>
+					<time>30 September, 2016</time>
+				</section>
+
+				<section id="why" data-state="after-bgsize-cover" data-background-transition="fade">
+					<h2>Why?</h2>
+				</section>
+
+                <section id="evolution" data-state="evolution" data-background="url(assets/i/wheel.jpg)"></section>
+
+                <section>
+                    <h2>Frameworks</h2>
+                </section>
+
+				<section id="bootstrap" data-state="bootstrap" data-background="url(assets/i/bootstrap.jpg)"></section>
+
+                <section>
+                    <h2>Bootstrap</h2>
+                    <div class="topic-container">
+                        <ul>
+                            <li class="fragment"><h4>Twitter, 2011</h4></li>
+                            <li class="fragment method-author">
+                                <img class="method-author__avatar" src="assets/i/otto.jpg" alt=""/>
+                                <h4>Mark Otto</h4>
+                                <p><a href="https://twitter.com/mdo" target="_blank">@mdo</a></p>
+                                <p><a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+				<section id="bootstrap-landing" data-state="bootstrap-landing" data-background="#5c4283 url(assets/i/bootstrap-landing-3.3.7.png)"></section>
+
+				<section id="bootstrap-versions" data-state="bootstrap-versions">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Versions</h4>
+						<ul>
+							<li class="fragment">v3.3.7</li>
+							<li class="fragment">v4 - soon! <a href="http://blog.getbootstrap.com/2016/09/05/bootstrap-4-alpha-4/" target="_blank">blog.getbootstrap.com/2016/09/05/bootstrap-4-alpha-4</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="bootstrap-install" data-state="bootstrap-install">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Install</h4>
+						<ul>
+							<li class="fragment">
+								<div>via npm</div>
+								<pre><code>$ npm install bootstrap</code></pre>
+							</li>
+							<li class="fragment">
+								<div>via bower</div>
+								<pre><code>$ bower install bootstrap</code></pre>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="bootstrap-support" data-state="bootstrap-support">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Browsers Support</h4>
+						<div class="fragment">
+							<p><b>Latest versions</b> of all primary browsers and platforms.</p>
+							<img src="assets/i/bootstrap-browsers.jpg" alt="" width="120%"/>
+						</div>
+					</div>
+				</section>
+
+				<section id="bootstrap-grid-example" data-state="bootstrap-grid-example">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Grid example</h4>
+						<div class="row">
+							<div class="col-md-8">.col-md-8</div>
+							<div class="col-md-4">.col-md-4</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4">.col-md-4</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">.col-md-6</div>
+							<div class="col-md-6">.col-md-6</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="bootstrap-code-example" data-state="bootstrap-code-example">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Code example</h4>
+						<pre><code class="xml">&lt;div class="row"&gt;
+	&lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+	&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+	&lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+				</section>
+
+				<section id="bootstrap-features" data-state="bootstrap-features">
+					<h2>Bootstrap</h2>
+					<div class="topic-container">
+						<h4>Features</h4>
+						<ul>
+							<li class="fragment">Grids</li>
+							<li class="fragment">Mobile First</li>
+							<li class="fragment">Themes</li>
+							<li class="fragment">Components</li>
+							<li class="fragment">Customization</li>
+							<li class="fragment">...Community</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="foundation" data-state="foundation" data-background="#00a6ca url(assets/i/foundation.jpg)"></section>
+
+				<section id="foundation-author" data-state="foundation-author">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<ul>
+							<li class="fragment"><h4>ZURB</h4></li>
+							<li class="fragment">
+								<p><a href="http://foundation.zurb.com/" target="_blank">foundation.zurb.com</a></p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="foundation-install" data-state="foundation-install">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Install</h4>
+						<ul>
+							<li class="fragment">
+								<div>via npm</div>
+								<pre><code>$ npm install -g foundation-cli</code></pre>
+								<pre><code>$ npm install foundation-sites</code></pre>
+							</li>
+							<li class="fragment">
+								<div>via bower</div>
+								<pre><code>$ bower install foundation-sites</code></pre>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="foundation-grid-example" data-state="foundation-grid-example">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Grid example</h4>
+						<div class="row">
+							<div class="small-6 large-8 columns-t">.small-6 .large-8 .columns</div>
+							<div class="small-6 large-4 columns-t">.small-6 .large-4 .columns</div>
+						</div>
+						<div class="row">
+							<div class="large-4 columns-t">.large-4 .columns</div>
+							<div class="large-4 columns-t">.large-4 .columns</div>
+							<div class="large-4 columns-t">.large-4 .columns</div>
+						</div>
+						<div class="row">
+							<div class="large-6 columns-t">.large-6 .columns</div>
+							<div class="large-6 columns-t">.large-6 .columns</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="foundation-code-example" data-state="foundation-code-example">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Code example</h4>
+						<pre><code class="xml">&lt;div class="row"&gt;
+	&lt;div class="small-6 large-8 columns"&gt;
+	    .small-6 .large-8 .columns
+	&lt;/div&gt;
+	&lt;div class="small-6 large-4 columns"&gt;
+	    .small-6 .large-4 .columns
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+	&lt;div class="large-4 columns"&gt;.large-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="large-6 columns"&gt;.large-6&lt;/div&gt;
+	&lt;div class="large-6 columns"&gt;.large-6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+				</section>
+
+				<section id="foundation-features" data-state="foundation-features">
+					<h2>Foundation</h2>
+					<div class="topic-container">
+						<h4>Features</h4>
+						<ul>
+							<li class="fragment">Grids</li>
+							<li class="fragment">Mobile First</li>
+							<li class="fragment">Themes (templates)</li>
+							<li class="fragment">Components</li>
+							<li class="fragment">Customization</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="good-or-evil" data-state="good-or-evil">
+					<h2>Good or evil?</h2>
+				</section>
+
+				<section id="frameworks-pros" data-state="frameworks-pros">
+					<ul>
+						<li>
+							<h3>Great collection <br />of ready-to-use components</h3>
+						</li>
+						<li class="fragment">
+							<h3>For all devices</h3>
+						</li>
+						<li class="fragment">
+							<h3>Github Community</h3>
+						</li>
+					</ul>
+				</section>
+
+				<section id="frameworks-cons" data-state="frameworks-cons">
+					<ul>
+						<li>
+							<h3>Preset boundaries for development</h3>
+						</li>
+						<li class="fragment">
+							<h3>Preset boundaries for developer</h3>
+						</li>
+					</ul>
+				</section>
+
+				<section id="frameworks-cases-of-usage" data-state="framerowks-cases-of-usage">
+					<h3>Cases of usage</h3>
+					<div class="topic-container">
+						<ul class="frameworks-usage">
+							<li class="fragment">You do not have design</li>
+							<li class="fragment">You need quick prototyping</li>
+							<li class="fragment">You need sandbox / understanding how it works</li>
+							<li class="fragment">Your design is similar to framework's one</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Methodologies</h2>
+				</section>
+
+				<section id="to-be-or-not-to-be" data-state="to-be-or-not-to-be">
+					<h3>With or without?</h3>
+				</section>
+
+                <section id="omg" data-state="omg" data-background="url(assets/i/omg.png)"></section>
+
+                <section id="support" data-state="support" data-background="url(assets/i/project-support.jpg)"></section>
+
+                <section id="graph" data-state="graph" data-background="#fff url(assets/i/graph.png)"></section>
+
+				<section id="oocss" data-state="oocss after-bgsize-cover" data-background="#fff">
+					<h2>OOCSS</h2>
+                </section>
+
+                <section data-background="#fff" id="oocss-abbr" data-state="oocss-abbr">
+                    <div>
+                        <div class="method-name" style="margin-left:30%;">
+                            <div><span class="first-letter">O</span><span class="fragment">bject</span></div>
+                            <div><span class="first-letter">O</span><span class="fragment">riented</span></div>
+                            <div><span class="first-letter">CSS</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="oocss-author" data-state="oocss-author">
+                    <h2>OOCSS</h2>
+                    <div class="topic-container">
+                        <ul>
+                            <li class="fragment">
+                                <h4 style="text-align: center;">Yahoo, ~2004</h4>
+                            </li>
+                            <li class="fragment method-author">
+                                <img class="method-author__avatar" src="assets/i/sullivan.jpg" alt="" />
+                                <h4 style="padding-top: 20px;">Nicole Sullivan</h4>
+                                <p><a href="https://twitter.com/stubbornella" target="_blank">@stubbornella</a></p>
+                                <p><a href="http://oocss.org/" target="_blank">oocss.org</a></p>
+                            </li>
+                        </ul>
+                    </div>
+				</section>
+
+                <section id="smacss" data-state="smacss method-bg" data-background="#92c3e0 url(assets/i/smacss-logo.jpg)" data-background-transition="none" data-transition="none"></section>
+
+                <section id="smacss-abbr" data-state="smacss-abbr">
+                    <div class="method-name">
+                        <div><span class="first-letter">S</span><span class="fragment">calable and</span></div>
+                        <div><span class="first-letter">M</span><span class="fragment">odular</span></div>
+                        <div><span class="first-letter">A</span><span class="fragment">rchitecture for</span></div>
+                        <div><span class="first-letter">CSS</span></div>
+                    </div>
+                </section>
+
+                <section id="smacss-author" data-state="smacss-blurred method-bg" data-background="#92c3e0 url(assets/i/smacss-logo-blurred.png)" data-transition="none" data-background-transition="none">
+                    <h2>SMACSS</h2>
+                    <ul>
+                        <li class="fragment"><h4 style="text-align: center;">~2011</h4></li>
+                        <li class="fragment method-author">
+                            <img class="method-author__avatar" src="assets/i/snook.jpg" alt=""/>
+                            <h4>Jonathan Snook</h4>
+                            <p><a href="https://twitter.com/snookca" target="_blank">@snookca</a></p>
+                            <p><a href="https://smacss.com/" target="_blank">smacss.com</a></p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="opor" data-state="opor" data-background="#fff" data-background-transition="fade">
+                    <h2>OPOR</h2>
+                </section>
+
+                <section id="opor-abbr" data-state="opor-abbr">
+                    <div class="method-name">
+                        <div><span class="first-letter">O</span><span class="fragment">ne</span></div>
+                        <div><span class="first-letter">P</span><span class="fragment">age</span></div>
+                        <div><span class="first-letter">O</span><span class="fragment">f</span></div>
+                        <div><span class="first-letter">R</span><span class="fragment">ules</span></div>
+                    </div>
+                </section>
+
+                <section id="opor-author" data-state="opor-author">
+                    <h2>OPOR</h2>
+                    <ul>
+                        <li class="fragment method-author">
+                            <img class="method-author__avatar" src="assets/i/sapegin.jpeg" alt=""/>
+                            <h4>Artem Sapegin</h4>
+                            <p><a href="https://twitter.com/sapegin" target="_blank">@sapegin</a></p>
+                            <p><a href="http://nano.sapegin.ru/all/opor-methodology" target="_blank">nano.sapegin.ru/all/opor-methodology</a></p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="mcss-author" data-state="mcss-author">
+                    <h2>MCSS</h2>
+                    <ul>
+                        <li class="fragment method-author">
+                            <img class="method-author__avatar" src="assets/i/haritonov.jpg" alt=""/>
+                            <h4>Robert Haritonov</h4>
+                            <p><a href="https://twitter.com/operatino" target="_blank">@operatino</a></p>
+                            <p><a href="https://operatino.github.io/MCSS/" target="_blank">operatino.github.io/MCSS</a></p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="bem-logo" data-state="bem method-bg" data-background="#fff url(assets/i/bem-logo.png)" data-transition="none" data-background-transition="none"></section>
+
+                <section id="bem-abbr" data-background="#fff" data-background-transition="none">
+                    <div>
+                        <div class="method-name">
+                            <div><span class="first-letter">B</span><span class="fragment">lock</span></div>
+                            <div><span class="first-letter">E</span><span class="fragment">lement</span></div>
+                            <div><span class="first-letter">M</span><span class="fragment">odifier</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="bem-author" data-state="bem-blurred method-bg" data-background="#fff url(assets/i/bem-logo-blurred.png)" data-background-transition="none">
+                    <h2>BEM</h2>
+                    <ul>
+                        <li class="fragment">
+                            <h4 style="text-align: center;">Yandex, 2006</h4>
+                        </li>
+                        <li class="fragment method-author">
+                            <img class="method-author__avatar" src="assets/i/harisov.jpg" alt="" />
+                            <h4 style="padding-top: 20px;">Vitaliy Harisov</h4>
+                            <p><a href="https://twitter.com/harisov" target="_blank">@harisov</a></p>
+                            <p><a href="https://ru.bem.info/" target="_blank">ru.bem.info</a></p>
+                            <p><a href="http://getbem.com/" target="_blank">getbem.com</a></p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="bem-reasons" data-state="bem-reasons">
+                    <h2>Reasons</h2>
+                    <div class="topic-container">
+                        <ul class="bem-reasons">
+
+                            <li class="fragment">
+                                <div>Every element on page may be repeated and may be cloned to any project page</div>
+                            </li>
+
+                            <li class="fragment">
+                                <div>CSS Cascade slows page rendering</div>
+                                <div>
+                                    <pre><code class="css">.parent .child { ... }</code></pre>
+                                    <pre><code class="css">.child { ... }</code></pre>
+                                </div>
+                            </li>
+
+                            <li class="fragment">
+                                <div>Class selectors are faster than tag selectors</div>
+                                <div>
+                                    <pre><code class="css">header { ... }</code></pre>
+                                    <pre><code class="css">.header { ... }</code></pre>
+                                </div>
+                            </li>
+
+                            <li class="fragment">
+                                <div>Every block name should be unique</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="aib-abbr" data-state="aib-abbr">
+                    <div class="method-name">
+                        <div><span class="first-letter">A</span><span class="fragment">bsolutely</span></div>
+                        <div><span class="first-letter">I</span><span class="fragment">ndependent</span></div>
+                        <div><span class="first-letter">B</span><span class="fragment">locks</span></div>
+                    </div>
+                </section>
+
+                <section id="bem-naming" data-state="bem-naming">
+                    <h2>BEM Naming</h2>
+                </section>
+
+                <section id="everything-is-block" data-state="everything-is-block" data-background="#fff">
+                    <h2><span class="first-letter">Everything</span> on page <span class="first-letter">is block</span></h2>
+                </section>
+
+                <section id="bem-block" data-state="bem-block">
+                    <h2><span class="first-letter">B</span>lock</h2>
+                </section>
+
+                <section id="bem-block-rules" data-state="bem-block-rules">
+                    <ul>
+                        <li>
+                            <div>Block name should be written with <strong>digits</strong> and <strong>latin letters</strong> in <strong>lowercase</strong></div>
+                        </li>
+                        <li>
+                            <pre><code class="css">.block { ... }
+
+.header { ... }</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>Block name can be composite</div>
+        <pre><code class="css">.block-wrapper { ... }
+
+.header-menu { ... }</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>Block name creates <strong>namespace</strong> for elements and modifiers</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="bem-block-example" data-state="epam-landing" data-background="url(assets/i/epam-landing-preview.jpg)"></section>
+
+                <section id="bem-block-example-highlighted" data-state="epam-landing" data-background="url(assets/i/epam-landing-blocks.jpg)"></section>
+
+                <section id="bem-block-example-highlighted-2" data-state="epam-landing" data-background="url(assets/i/epam-landing-blocks-highlighted.jpg)"></section>
+
+                <section id="bem-block-code" data-state="bem-block-code">
+                    <ul>
+                        <li>
+                            <div>header</div>
+                            <pre><code class="xml">&lt;header class="header"&gt; ... &lt;/header&gt;</code></pre>
+                            <pre><code class="css">.header { ... }</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>navigation</div>
+                            <pre><code class="xml">&lt;nav class="navigation"&gt; ... &lt;/nav&gt;</code></pre>
+                            <pre><code class="css">.navigation { ... }</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>footer</div>
+                            <pre><code class="xml">&lt;footer class="footer"&gt;...&lt;/footer&gt;</code></pre>
+                            <pre><code class="css">.footer { ... }</code></pre>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="bem-element" data-state="bem-element">
+                    <h2><span class="first-letter">E</span>lement</h2>
+                </section>
+
+                <section id="bem-element-rules" data-state="bem-element-rules">
+                    <ul>
+                        <li>
+                            <div>Element name separates from block name by <strong>double underline</strong></div>
+<pre><code class="xml">&lt;div class="block"&gt;
+    &lt;div class="block__element"&gt;&lt;/div&gt;
+    &lt;div class="block__yet-one-element"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<pre><code class="css">.block__element { ... }
+
+.block__yet-one-element { ... }</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>Elements may contain other elements</div>
+<pre><code class="xml">&lt;article class="article"&gt;
+    &lt;header class="article__title"&gt; ... &lt;/header&gt;
+    &lt;aside class="article__data"&gt;
+        &lt;span class="article__author"&gt; ... &lt;/span&gt;
+        &lt;time class="article__pubdate"&gt; ... &lt;/time&gt;
+    &lt;/aside&gt;
+&lt;/article&gt;</code></pre>
+                            <div class="fragment"><strong>...but not logically!</strong></div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="bem-element-example-blocks" data-state="epam-landing" data-background="url(assets/i/epam-landing-blocks.jpg)"></section>
+
+                <section id="bem-element-example-elements" data-state="epam-landing" data-background="url(assets/i/epam-landing-elements.jpg)"></section>
+
+                <section id="bem-element-example-highlighted" data-state="epam-landing" data-background="url(assets/i/epam-landing-elements-highlighted.jpg)"></section>
+
+                <section id="bem-element-example-header" data-state="epam-landing epam-landing-header bem-element-example-header" data-background="url(assets/i/epam-landing-header.jpg)">
+                    <div>
+		                <div>header</div>
+                        <ul>
+                            <li class="fragment">logo</li>
+                            <li class="fragment">menu</li>
+                            <li class="fragment">email-icon</li>
+                            <li class="fragment">search-icon</li>
+                        </ul>
+                    </div>
+                        <div class="fragment">
+                            <pre><code class="xml">&lt;header class="header"&gt;
+    &lt;a class="header__logo"&gt;&lt;/a&gt;
+    &lt;ul class="header-menu"&gt; ... &lt;/ul&gt;
+    &lt;a class="header__email"&gt;&lt;/a&gt;
+    &lt;button class="header__search"&gt;&lt;/button&gt;
+&lt;/header&gt;</code></pre>
+                        </div>
+                    </ul>
+                </section>
+
+                <section id="bem-modifier" data-state="bem-modifier">
+                    <h2><span class="first-letter">M</span>odifier</h2>
+                </section>
+
+                <section id="bem-modifier-rules" data-state="bem-modifier-rules">
+                    <ul>
+                        <li>
+                            <div>By default, modifiers are written in format <strong>key_value</strong></div>
+                        </li>
+                        <li class="fragment">
+                            <div>Modifier separates from block name or element name by <strong>one underline</strong></div>
+                            <pre><code class="xml">&lt;div class="block-name_mod-name"&gt; ... &lt;/div&gt;
+
+&lt;div class="menu_state_hidden"&gt; ... &lt;/div&gt;</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>Both blocks and elements may have modifiers</div>
+                            <pre><code class="xml">&lt;div class="block_mod"&gt; ... &lt;/div&gt;
+
+&lt;div class="block__elem_mod"&gt; ... &lt;/div&gt;
+
+&lt;li class="menu__item_state_active"&gt; ... &lt;/li&gt;</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>Short modifier format &mdash; logical boolean modifier</div>
+                            <pre><code class="xml">&lt;div class="block_visible"&gt; ... &lt;/div&gt;
+
+&lt;div class="slider__element_current"&gt; ... &lt;/div&gt;</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <div>Modifier can be added only to <strong>existing</strong> block or element, it <strong>DOES NOT</strong> exist by itself</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="bem-modifier-example-highlighted" data-state="epam-landing" data-background="url(assets/i/epam-landing-modifiers.jpg)"></section>
+
+                <section id="bem-modifier-example-highlighted-2" data-state="bem-modifier-example-highlighted-2" data-background="url(assets/i/epam-landing-header-modifiers.jpg)">
+                    <ul>
+                        <li class="fragment">
+        <pre><code class="xml">&lt;ul class="header-menu"&gt;
+    &lt;li class="header-menu__item
+               header-menu__item_state_active"&gt;
+        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="header-menu__item"&gt;
+        &lt;a class="header-menu__title"&gt; ... &lt;/a&gt;
+    &lt;/li&gt;
+    ...
+&lt;/ul&gt;</code></pre>
+                        </li>
+                        <li class="fragment">
+                            <pre><code class="xml">&lt;nav class="navigation"&gt;
+    &lt;a class="navigation__item"&gt; ... &lt;/a&gt;
+    &lt;a class="navigation__item
+              navigation__item_current"&gt; ... &lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="bem-important" data-state="bem-important">
+                    <h2>Most important things</h2>
+                    <div class="topic-container">
+                        <div>Nested logical structure is supported <strong>ONLY</strong> for blocks</div>
+                    </div>
+                </section>
+
+                <section id="bem-important-2" data-state="bem-important-2">
+                    <h2>Most important things</h2>
+                    <div class="topic-container">
+                        <div>Element's element <strong>DOES NOT</strong> exist in BEM</div>
+<pre><code class="xml">&lt;div class="block"&gt;
+    &lt;div class="block__elem1"&gt;
+        &lt;div class="block__elem2"&gt;
+            &lt;div class="block__elem3"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<pre class="fragment"><code class="css">.block { ... }
+.block__elem1 { ... }
+.block__elem2 { ... }
+.block__elem3 { ... }</code></pre>
+<pre class="fragment"><code class="xml">&lt;div class="block"&gt;
+    &lt;div class="block__elem1"&gt;
+        &lt;div class="block__elem2"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="block__elem3"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </section>
+
+                <section id="bem-important-3" data-state="bem-important-3">
+                    <h2>Most important things</h2>
+                    <div class="topic-container">
+                        <div>Actually, does <strong>NOT</strong> matter how block separates from element and modifier</div>
+                        <div class="fragment">
+<pre><code class="css">.block-name__elem-name_mod-name_mod-val
+
+.blockName__elemName—modName
+
+.blockName-elemName_modName_modVal</code></pre>
+                            <div>Every variant is correct in BEM</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="bem-block-vs-element" data-state="bem-block-vs-element">
+                    <h2><span class="first-letter">B</span>lock or <span class="first-letter">e</span>lement?</h2>
+                    <div class="topic-container">
+                        <ol>
+                            <li class="fragment" style="margin-bottom:50px;">If code fragment may be used repeatly and does not depend on another page components, you should use <strong>BLOCK</strong>.</li>
+                            <li class="fragment">If code fragment can <strong>not</strong> be used by itself, without its parent entity (block), in most of cases you should use <strong>ELEMENT</strong></li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="bem-mixing" data-state="bem-mixing">
+                    <h2>Mixing</h2>
+                    <div class="topic-container">
+                        <ul>
+                            <li class="fragment">
+                                <div>button</div>
+                                <pre><code class="css">.button { ... }</code></pre>
+                                <div>order</div>
+                                <pre><code class="css">.order { ... }
+
+...
+
+.order__button { ... }</code></pre>
+                            </li>
+                            <li class="fragment">
+                                <div>result</div>
+                                <pre><code class="xml">&lt;button class="order__button button"&gt;&lt;/button&gt;</code></pre>
+                            </li>
+                            <li class="fragment">
+                                <pre><code class="css">.order .button { ... }</code></pre>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="bem-preproc" data-state="bem-preproc">
+                    <h2>Preprocessors &hearts; BEM</h2>
+                    <div class="topic-container">
+                        <pre><code class="css less">.block {
+
+    &__elem {
+
+        &_some_mod {
+            foo: bar;
+            }
+        }
+
+    &__yet-one-elem {
+        bar: baz;
+        }
+
+    &_mod {
+        baz: bar;
+        }
+
+    &_mod &__elem {
+        foo: bar;
+        }
+    }</code></pre>
+                    </div>
+                </section>
+
+                <section id="bem-is-also-about" data-state="bem-is-also-about">
+                    <h2>BEM is also about</h2>
+                    <div class="topic-container">
+                        <ul>
+                            <li class="fragment">BEMHTML</li>
+                            <li class="fragment">BEMJSON</li>
+                            <li class="fragment">BEM Tools</li>
+                            <li class="fragment">BEM Components</li>
+                            <li class="fragment">BEM Project Structure</li>
+                            <li class="fragment">i-bem.js</li>
+                            <li class="fragment">...and that's not all</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="bem-sample" data-state="bem-sample" data-background="#39c2d7 url(assets/i/bem-tweet-magic.png)" data-background-transition="none"></section>
+
+                <section id="bem-sample-disassemble" data-state="bem-sample-disassemble" data-background="#39c2d7 url(assets/i/bem-tweet-magic-disassemble.png)" data-background-transition="none"></section>
+
+                <section id="thank-you" data-state="thank-you">
+                    <h2>Thank you!</h2>
+
+                    <div class="author">
+                        <img class="author-avatar" src="assets/i/avatar.jpg" alt="" />
+                        <div class="author-main">
+                            <h4 class="author-name">Anton Vernihor</h4>
+                            <div class="author-contacts">
+                                <div class="author-contacts__twitter"><a href="mailto:anton_vernihor@epam.com">anton_vernihor@epam.com</a></div>
+                                <div class="author-contacts__skype"><strong>Skype:</strong> ismmurf</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+                slideNumber: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+                transitionSpeed: 'fast',
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+        <script>
+            Reveal.configure({backgroundTransition: 'fade'});
+        </script>
+	</body>
+</html>
