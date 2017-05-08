@@ -1,8 +1,6 @@
 # Methodologies & Frameworks
 
-### JS Mentoring Program - EPAM 2016
+### JS Mentoring Program - EPAM 2017
 
 Slides for lecture about different frameworks and methodologies.
-
-http://is4kov.github.io/epam-mp-methodologies
 
