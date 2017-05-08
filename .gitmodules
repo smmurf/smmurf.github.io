@@ -2,3 +2,6 @@
 	path = epam_mp_methodologies
 	url = https://github.com/smmurf/epam_mp_methodologies.git
 	branch = gh-pages
+[submodule "css-methodologies-17"]
+	path = css-methodologies-17
+	url = https://github.com/smmurf/css-methodologies-17.git
