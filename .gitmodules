@@ -2,3 +2,6 @@
 	path = epam_mp_methodologies
 	url = https://github.com/smmurf/epam_mp_methodologies.git
 	branch = gh-pages
+[submodule "responsive-design-17"]
+	path = responsive-design-17
+	url = https://github.com/smmurf/responsive-design-17.git
